@@ -1,0 +1,17 @@
+.video-item-container{
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  width: 620px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  border-bottom: 0.5px solid rgb(164, 164, 164);
+}
+.video-item-container img{
+  border-radius: 10px;
+}
+.video-exp{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+.banner-item{
+  height: 508px;
+  width: 1240px;
+  margin-bottom: 80px;
+  margin-right: 10px;
+  /* border: 1px solid gray; */
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.banner-item img{
+  height: 508px;
+  width: 1240px;
+  object-fit: cover;
+  border-radius: 10px;
+}

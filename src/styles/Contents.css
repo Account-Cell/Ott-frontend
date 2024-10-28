@@ -1,0 +1,32 @@
+.contents-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contents-sub-continer{
+  width: 1240px;
+}
+.contents-banner{
+  height: 508px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contents-banner img{
+  height: 508px;
+  width: 1240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.contents-explanation{
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.contents-video-container{
+  width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+}

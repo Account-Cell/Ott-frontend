@@ -1,0 +1,16 @@
+.content-item{
+  height: 340px;
+  width: 238px;
+  margin-bottom: 80px;
+  margin-right: 10px;
+  /* border: 1px solid gray; */
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.content-item img{
+  height: 340px;
+  width: 238px;
+  object-fit: cover;
+  border-radius: 10px;
+}

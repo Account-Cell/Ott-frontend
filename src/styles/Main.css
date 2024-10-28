@@ -1,0 +1,29 @@
+.main-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main-sub-continer{
+  width: 1240px;
+}
+.main-banner{
+  height: 508px;
+  margin-bottom: 80px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.content-container{
+  width: 1240px;
+}
+.content-item-container{
+  width: 1240px;
+  overflow: auto;
+  white-space: nowrap;
+  box-sizing: content-box;
+  overflow-y: scroll;
+  height: 442px;
+}
+.content-item-container::-webkit-scrollbar{
+  display: none; 
+}

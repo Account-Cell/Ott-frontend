@@ -1,0 +1,30 @@
+.header-container{
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  height: 74px;
+  align-items: center;
+  border: 1px solid gray;
+}
+.header-sub-container{
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  justify-content: space-between;
+}
+.logo{
+  cursor: pointer;
+}
+
+.category-container{
+  display: flex;
+  flex-direction: row;
+}
+.category-name{
+  margin: 0 50px;
+  cursor: pointer;
+}
+.user-url{
+  cursor: pointer;
+}
