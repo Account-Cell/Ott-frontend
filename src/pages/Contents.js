@@ -1,4 +1,3 @@
-// Contents.js
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import VideoItem from '../components/VideoItem';
