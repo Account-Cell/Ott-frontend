@@ -13,11 +13,12 @@ import VideoItem from './components/VideoItem.js'; // VideoItem 컴포넌트 추
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
-  const hideHeaderPaths = ['/login', '/profile', '/join']; // Join은 헤더를 숨기지 않음
+  const hideHeaderPaths = ['/login', '/profile']; // Join은 헤더를 숨기지 않음
 
   // useEffect(() => {
   //   const accessToken = localStorage.getItem('access_token');
   //   const profileToken = localStorage.getItem('profile_token');
+
 
   //   // /login과 /join 경로에서는 토큰 여부와 관계없이 리다이렉트 하지 않음
   //   if (location.pathname !== '/join' && !accessToken) {
@@ -38,7 +39,6 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/content/:contentId" element={<Contents />} />
         <Route path="/content/share/:contentId" element={<ShareContents />} />
-        <Route path="/video" element={<VideoItem />} /> {/* /video 경로 추가 */}
       </Routes>
     </div>
   );
