@@ -40,7 +40,28 @@
   border-radius: 5px;
   font-size: 0.9rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .Join-button:active{
+  opacity: 0.6;
+}
+.eamil-confirm-container{
+  display: grid;
+  grid-template-columns: 77% 20%;
+  grid-column-gap: 3%;
+}
+
+.email-confirm-button{
+  background-color: #57648C;
+  color: aliceblue;
+  margin: 10px 0;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.email-confirm-button:active{
   opacity: 0.6;
 }

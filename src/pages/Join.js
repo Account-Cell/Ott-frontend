@@ -54,9 +54,16 @@ const Join = (props) => {
           <div className='Join-input-container'>
             <input type='text' className='Join-name-input' name='Join-name' placeholder='이름' onChange={(e)=>setName(e)}/>
             <input type='text' className='Join-id-input' name='Join-id' placeholder='아이디' onChange={(e)=>setUsername(e)}/>
-            <input type='text' className='Join-password-input' name='Join-password' placeholder='비밀번호' onChange={(e)=>setPassword(e)}/>
-            <input type='text' className='Join-password-confirm-input' name='Join-password-confirm' placeholder='비밀번호 확인' onChange={(e)=>setPasswordCon(e)}/>
-            <input type='text' className='Join-email-input' name='Join-email' placeholder='이메일' onChange={(e)=>setEmail(e)}/>
+            <input type='password' className='Join-password-input' name='Join-password' placeholder='비밀번호' onChange={(e)=>setPassword(e)}/>
+            <input type='password' className='Join-password-confirm-input' name='Join-password-confirm' placeholder='비밀번호 확인' onChange={(e)=>setPasswordCon(e)}/>
+            <div className='eamil-confirm-container'>
+              <input type='text' className='Join-email-input' name='Join-email' placeholder='이메일' onChange={(e)=>setEmail(e)}/>
+              <button className='email-confirm-button'>보내기</button>
+            </div>
+            <div className='eamil-confirm-container'>
+              <input type='text' className='Join-email-input' name='Join-email' placeholder='인증코드' onChange={(e)=>setEmail(e)}/>
+              <button className='email-confirm-button'>인증</button>
+            </div>
             <input type='text' className='Join-name-birth' name='Join-birth' placeholder='생년월일' onChange={(e)=>setBirth(e)}/>
           </div>
           <button onClick={join} className='Join-button'>회원가입</button>

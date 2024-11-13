@@ -11,7 +11,7 @@ import Profile from './pages/Profile.js';
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
-  const hideHeaderPaths = ['/login', '/profile']; // Join은 헤더를 숨기지 않음
+  const hideHeaderPaths = ['/login', '/profile','/join']; // Join은 헤더를 숨기지 않음
 
   useEffect(() => {
     const accessToken = localStorage.getItem('access_token');
