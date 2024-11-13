@@ -11,7 +11,8 @@ const ContentItem = (props) => {
   return(
     <>
       <div onClick={()=>{click();}} className='content-item'>
-        <img src='img/test.jpeg'/>
+        {/* <img src='img/test.jpeg'/> */}
+        video
       </div>
     </>
   )

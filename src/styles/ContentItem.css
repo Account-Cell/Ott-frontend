@@ -9,6 +9,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative; /* 호버 시 상위로 이동할 준비 */
   z-index: 0; /* 기본 상태에서 z-index를 낮게 설정 */
+  border: 0.5px solid gray;
 }
 
 .content-item:hover {
