@@ -9,7 +9,8 @@ const BannerItem = (props) => {
   return(
     <>
       <div className='banner-item'>
-        <img src='img/test4.jpg'/>
+        {/* <img src='img/test4.jpg'/> */}
+        banner
       </div>
     </>
   )

@@ -65,3 +65,14 @@
 .email-confirm-button:active{
   opacity: 0.6;
 }
+.Join-input-container .file-upload{
+  border: none;
+}
+.Join-input-container .list{
+  
+}
+textarea {
+  height: 100px;
+  overflow-y: scroll;
+  resize: none;
+}
