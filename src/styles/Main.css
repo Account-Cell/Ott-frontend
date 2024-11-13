@@ -16,14 +16,17 @@
 .content-container{
   width: 1240px;
 }
-.content-item-container{
+.content-item-container {
   width: 1240px;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
   box-sizing: content-box;
-  overflow-y: scroll;
   height: 442px;
+  padding: 10px 0 20px 0; /* 상하 여백 추가 */
+  position: relative;
 }
-.content-item-container::-webkit-scrollbar{
-  display: none; 
+
+.content-item-container::-webkit-scrollbar {
+  display: none;
 }

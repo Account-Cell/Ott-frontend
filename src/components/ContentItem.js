@@ -4,11 +4,13 @@ import '../styles/ContentItem.css'
 
 const ContentItem = (props) => {
   const navigate = useNavigate();
-  
+  const click = ()=>{
+    props.click(props.videoId);
+  }
 
   return(
     <>
-      <div className='content-item'>
+      <div onClick={()=>{click();}} className='content-item'>
         <img src='img/test.jpeg'/>
       </div>
     </>

@@ -1,0 +1,31 @@
+.friend-item-container{
+  height: 50px;
+  display: flex;
+  width: 290px;
+  font-size: 1rem;
+  align-items: center;
+  border: 0.5px solid gray;
+  margin-bottom: 10px;
+}
+.friend-name{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.friend-add-button-container{
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+.friend-item-add-button{
+  background-color: #57648C;
+  color: aliceblue;
+  border: 0;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: 30px;
+  cursor: pointer;
+}
+.friend-item-add-button:active{
+  opacity: .4; 
+ }
