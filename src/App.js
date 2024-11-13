@@ -7,17 +7,18 @@ import Header from './pages/Header.js';
 import Contents from './pages/Contents.js';
 import ShareContents from './pages/ShareContents.js';
 import Profile from './pages/Profile.js';
+import VideoItem from './components/VideoItem.js'; // VideoItem 컴포넌트 추가
 
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
-  const hideHeaderPaths = ['/login', '/profile','/join']; // Join은 헤더를 숨기지 않음
+  const hideHeaderPaths = ['/login', '/profile', '/join']; // Join은 헤더를 숨기지 않음
 
   useEffect(() => {
     const accessToken = localStorage.getItem('access_token');
     const profileToken = localStorage.getItem('profile_token');
 
-    // /login과 /join 경로에서는 토큰 여부와 관계없이 리다이렉트 하지 않음
+    // /login과 /join 경로에서는 토큰 여부와 관계없이 리다이렉트하지 않음
     if (location.pathname !== '/join' && !accessToken) {
       navigate('/login'); // access_token 없으면 login으로 리다이렉트
     } else if (accessToken && !profileToken && location.pathname !== '/profile') {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/content/:contentId" element={<Contents />} />
         <Route path="/content/share/:contentId" element={<ShareContents />} />
+        <Route path="/video" element={<VideoItem />} /> {/* /video 경로 추가 */}
       </Routes>
     </div>
   );
