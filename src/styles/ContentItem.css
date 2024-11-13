@@ -1,16 +1,31 @@
-.content-item{
+.content-item {
   height: 340px;
   width: 238px;
   margin-bottom: 80px;
   margin-right: 10px;
-  /* border: 1px solid gray; */
   display: inline-block;
   border-radius: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* 호버 시 상위로 이동할 준비 */
+  z-index: 0; /* 기본 상태에서 z-index를 낮게 설정 */
 }
-.content-item img{
+
+.content-item:hover {
+  transform: translateY(-7px); /* 위로 살짝 이동 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  z-index: 10; /* 호버 시 다른 요소 위로 올라오도록 설정 */
+}
+
+.content-item img {
   height: 340px;
   width: 238px;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s ease; /* 이미지에도 같은 속도 설정 */
+}
+
+.content-item:hover img {
+  transform: scale(1.01); /* 이미지 살짝 확대 */
+  z-index: 101;
 }

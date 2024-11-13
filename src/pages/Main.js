@@ -3,13 +3,34 @@ import axios from 'axios';
 import '../styles/Main.css'
 import ContentItem from '../components/ContentItem';
 import BannerItem from '../components/BannerItem';
+import CreateRoom from '../components/CreateRoom';
+import { useEffect, useState } from 'react';
 const Main = (props) => {
   const navigate = useNavigate();
+  const [createRommComponent,setCreateRommComponent] = useState(false);
+  const access_token = localStorage.getItem('access_token');
+  const [videoIdToComponent,setVideoIdToComponent] = useState(0);
   
+  const userInfo = () => {
+    if(!access_token){
+      navigate('/login')
+    }
+  }
+
+  useEffect(()=>{
+    userInfo()
+  },[])
+
+  const setCreateRoom = (videoId)=>{
+    console.log("adsfadfs")
+    setCreateRommComponent(true);
+    setVideoIdToComponent(videoId);
+  }
 
   return(
     <>
       <div className='main-container'>
+        {createRommComponent ? <CreateRoom onOff={setCreateRommComponent} /> :null}
         <div className='main-sub-continer'>
           <div className='main-banner'>
             <BannerItem/>
@@ -20,7 +41,7 @@ const Main = (props) => {
             드라마
           </div>
           <div className='content-item-container'>
-            <ContentItem/>
+            <ContentItem click={setCreateRoom} videoId={1}/>
             <ContentItem/>
             <ContentItem/>
             <ContentItem/>

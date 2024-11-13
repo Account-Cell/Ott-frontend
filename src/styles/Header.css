@@ -28,3 +28,14 @@
 .user-url{
   cursor: pointer;
 }
+.user-info-url-container{
+  display: flex;
+}
+.user-info-url-container .friend{
+ margin-right: 10px;
+ cursor: pointer;
+}
+.logout{
+  margin-right: 10px;
+  cursor: pointer;
+}
